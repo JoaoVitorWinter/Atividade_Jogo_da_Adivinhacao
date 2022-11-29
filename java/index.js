@@ -6,6 +6,7 @@ function setarNome () {
     nome = document.getElementById("nome").value
     if(nome != ""){
         document.getElementById("nome").disabled = true
+        document.getElementById("confirma1").disabled = true
         document.getElementById("insano").removeAttribute("disabled")
         document.getElementById("dificil").removeAttribute("disabled")
         document.getElementById("medio").removeAttribute("disabled")
@@ -26,4 +27,11 @@ function setarModo (num) {
 
 function jogar () {
     numRandom = parseInt(Math.random()*99 + 1)
+    document.getElementById("tentativas").innerText = "Tentativas: " + modo
+    document.getElementById("chute").removeAttribute("disabled")
+    document.getElementById("confirma2").removeAttribute("disabled")
+}
+
+function verificarChute () {
+
 }
