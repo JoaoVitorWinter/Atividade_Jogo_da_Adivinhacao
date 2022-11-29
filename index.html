@@ -11,9 +11,9 @@
 <body>
     <div id = "principal">
         <div id = "titulo">Jogo Adivinhação</div>
-        <input type="text" id="nome" placeholder="Digite o seu nome"><br><br>
+        <input class = "input" type="text" id="nome" placeholder="Digite o seu nome"><br><br>
         <button  class = "botaoConfirma" onclick = "setarNome()">Confirmar</button>
-        <h2 id = "subtitulo">Modo de jogo</h2>
+        <h2 class = "subtitulo">Modo de jogo</h2>
         <div>
             <button class = "botao" id = "insano" onclick = "setarModo(1)" disabled>1 - Insano</button>
             <button class = "botao" id = "dificil" onclick = "setarModo(2)" disabled>2 - Difícil</button>
@@ -22,7 +22,7 @@
             <button class = "botao" id = "noob" onclick = "setarModo(5)" disabled>5 - Noob</button>
         </div>
 
-        <h2>Jogo</h2>
+        <h2 class = "subtitulo">Jogo</h2>
 
         <div>
             ?
@@ -30,7 +30,7 @@
 
         <p id = "tentativas">Tentativas: </p>
 
-        <input type = "number" id = "chute" placeholder="Digite o seu chute" disabled>
+        <input class = "input" type = "number" id = "chute" placeholder="Digite o seu chute" disabled><br><br>
 
         <button class = "botaoConfirma" onclick = "verificarChute()">Confirmar</button disabled>
 
