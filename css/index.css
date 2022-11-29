@@ -2,7 +2,15 @@
 
 #principal{
     text-align: center;
-    top: 500px;
+    top: 250px;
     float: right;
     position: absolute;
+    left:550px;
+}
+
+#titulo{
+    color:darkcyan;
+    font-family: serif;
+    font-size: 23px;
+
 }
