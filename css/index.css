@@ -5,12 +5,16 @@
     top: 250px;
     float: right;
     position: absolute;
-    left:550px;
+    left:425px;
 }
 
 #titulo{
-    color:darkcyan;
+    color:rgb(2, 90, 90);
     font-family: serif;
-    font-size: 23px;
+    font-size: 70px;
 
+}
+
+body{
+    background-color: cadetblue;
 }
