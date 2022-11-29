@@ -2,7 +2,7 @@
 
 #principal{
     text-align: center;
-    top: 250px;
+    top: 200px;
     float: right;
     position: absolute;
     left:425px;
@@ -30,3 +30,25 @@ body{
     background-color: cadetblue;
 }
 
+#botaoConfirma{
+    background: rgb(2, 90, 90);
+	color: rgb(145, 199, 181);
+	border-style: outset;
+	border-color: rgb(19, 122, 122);
+	height: 50px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;  
+    border-radius: 30px;
+}
+
+.botao{
+	background: rgb(145, 199, 181);
+	color: rgb(2, 90, 90);
+	border-style: outset;
+	border-color: rgb(191, 243, 226);
+	height: 50px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+}
