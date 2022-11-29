@@ -1,6 +1,9 @@
 let nome
 let modo = 0
 let numRandom
+let chute = 0
+let numChutes = 0
+let pontos = 0
 
 function setarNome () {
     nome = document.getElementById("nome").value
@@ -33,5 +36,22 @@ function jogar () {
 }
 
 function verificarChute () {
+    chute = document.getElementById("chute").value
+    numChutes++
+    if(chute == numRandom){
+        pontos = 1000 / (modo + numChutes)
+        alert("Parabéns, " + nome + ", você acertou! Pontuação: " + pontos)
+        window.location.href = "/"
+    } else if (chute > numRandom){
+        document.getElementById("aviso").innerText = "O chute foi maior que o número!"
+    } else {
+        document.getElementById("aviso").innerText = "O chute foi menor que o número!"
+    }
 
+    if(numChutes == modo){
+        alert("Você perdeu! O número era " + numRandom)
+        window.location.href = "/"
+    }
+
+    document.getElementById("tentativas").innerText = "Tentativas: " + (modo - numChutes)
 }
