@@ -18,3 +18,11 @@ const sql = mysql.createConnection({
     port: 3306,
     database: "jogo_adivinhacao"
 })
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html")
+})
+
+app.listen(port, () => {
+    console.log("Servidor tá ON - http://localhost:8081/")
+})
