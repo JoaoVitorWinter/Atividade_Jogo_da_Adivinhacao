@@ -48,6 +48,7 @@ body{
 	font: bold15px arial,sans-serif;
 	text-shadow: none;  
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .botao{
@@ -59,5 +60,6 @@ body{
 	width: 100px;
 	font: bold15px arial,sans-serif;
 	text-shadow: none;
+    cursor: pointer;
 }
 /*aaaaaa
