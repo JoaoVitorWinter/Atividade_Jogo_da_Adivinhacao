@@ -7,6 +7,6 @@ function setarNome () {
     console.log(nome)
 }
 
-function setarModo (modo) {
-    
+function setarModo (num) {
+    modo = num
 }
