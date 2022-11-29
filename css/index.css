@@ -30,7 +30,7 @@ body{
     background-color: cadetblue;
 }
 
-#botaoConfirma{
+.botaoConfirma{
     background: rgb(2, 90, 90);
 	color: rgb(145, 199, 181);
 	border-style: outset;
