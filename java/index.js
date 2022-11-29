@@ -1,7 +1,12 @@
 let nome
-
-
+let modo = 0
 
 function setarNome () {
-    nome = document.getElementById("").value
+    nome = document.getElementById("nome").value
+    document.getElementById("nome").disabled = true
+    console.log(nome)
+}
+
+function setarModo (modo) {
+    
 }
