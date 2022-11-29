@@ -1,5 +1,8 @@
-#titulo{
- text-align: center;
- top: 500px;
-    
+
+
+#principal{
+    text-align: center;
+    top: 500px;
+    float: right;
+    position: absolute;
 }
