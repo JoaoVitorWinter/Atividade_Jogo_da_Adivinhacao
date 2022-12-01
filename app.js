@@ -23,8 +23,19 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html")
 })
 
+app.get("/rank", (req, res) => {
+    res.sendFile(__dirname + "/rank.html")
+})
+
+
 app.post("/rankear", (req, res) => {
     sql.query("insert into placar values (?,?,?)", [null, req.body.nome, req.body.pontos])
+})
+
+app.get("/pegarPlacar", (req, res) => {
+    sql.query("select nome, pontos from placar order by pontos DESC", (error, results, fields) => {
+        res.json(results)
+    })
 })
 
 app.listen(port, () => {

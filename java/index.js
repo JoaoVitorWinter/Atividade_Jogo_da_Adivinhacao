@@ -4,6 +4,7 @@ let numRandom
 let chute = 0
 let numChutes = 0
 let pontos = 0
+let tabela
 
 function setarNome () {
     nome = document.getElementById("nome").value
@@ -81,4 +82,27 @@ function verificarChute () {
     }
 
     document.getElementById("tentativas").innerText = "Tentativas: " + (modo - numChutes)
+}
+
+function pegarPlacar () {
+    fetch("/pegarPlacar", {
+        method: "GET",
+        cache: "default",
+    })
+    .then(res => {
+        res.json()
+            .then(data => {
+                atribuirInfo(data)
+            })
+    })
+}
+
+function atribuirInfo (results) {
+    tabela = ""
+    tabela += "<tr><th>Ranking</th><th>Nome</th><th>Pontos</th></tr>"
+    
+    for (let x in results){
+        tabela += `<tr><td>${parseInt(x) + 1}</td><td>${results[x].nome}</td><td>${results[x].pontos}</td></tr>`
+    }
+    document.getElementById("placar").innerHTML = tabela
 }

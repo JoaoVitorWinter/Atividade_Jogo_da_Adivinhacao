@@ -1,0 +1,54 @@
+body {
+    background-color: cadetblue;
+}
+
+table, th, td {
+    border: 2px black solid;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: greenyellow;
+}
+
+td {
+    background-color: antiquewhite;
+}
+
+table {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: auto;
+}
+
+a {
+    margin: 20px;
+    background: rgb(2, 90, 90);
+	color: rgb(145, 199, 181);
+	border-style: outset;
+	border-color: rgb(19, 122, 122);
+	height: 50px;
+	width: 100px;
+	font-family:  arial,sans-serif;
+	text-shadow: none;  
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(145, 199, 181);;
+    color:  rgb(2, 90, 90);
+}
