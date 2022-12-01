@@ -45,7 +45,7 @@ body{
 	border-color: rgb(19, 122, 122);
 	height: 50px;
 	width: 100px;
-	font: bold15px arial,sans-serif;
+	font: arial,sans-serif;
 	text-shadow: none;  
     border-radius: 30px;
     cursor: pointer;
@@ -58,8 +58,30 @@ body{
 	border-color: rgb(191, 243, 226);
 	height: 50px;
 	width: 100px;
-	font: bold15px arial,sans-serif;
+	font: arial,sans-serif;
 	text-shadow: none;
     cursor: pointer;
 }
-/*aaaaaa
+
+a{
+    background: rgb(2, 90, 90);
+	color: rgb(145, 199, 181);
+	border-style: outset;
+	border-color: rgb(19, 122, 122);
+	height: 50px;
+	width: 100px;
+	font-family:  arial,sans-serif;
+	text-shadow: none;  
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(145, 199, 181);;
+    color:  rgb(2, 90, 90);
+}
