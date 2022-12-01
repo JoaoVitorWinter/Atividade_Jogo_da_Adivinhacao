@@ -10,6 +10,9 @@ function setarNome () {
     if(nome != ""){
         document.getElementById("nome").disabled = true
         document.getElementById("confirma1").disabled = true
+        document.getElementById("confirma1").style.backgroundColor = "gray"
+        document.getElementById("confirma1").style.color = "black"
+        document.getElementById("confirma1").style.cursor = "default"
         document.getElementById("insano").removeAttribute("disabled")
         document.getElementById("dificil").removeAttribute("disabled")
         document.getElementById("medio").removeAttribute("disabled")
@@ -25,6 +28,21 @@ function setarModo (num) {
     document.getElementById("medio").disabled = true
     document.getElementById("facil").disabled = true
     document.getElementById("noob").disabled = true
+    document.getElementById("insano").style.backgroundColor = "gray"
+    document.getElementById("insano").style.color = "black"
+    document.getElementById("insano").style.cursor = "default"
+    document.getElementById("dificil").style.backgroundColor = "gray"
+    document.getElementById("dificil").style.color = "black"
+    document.getElementById("dificil").style.cursor = "default"
+    document.getElementById("medio").style.backgroundColor = "gray"
+    document.getElementById("medio").style.color = "black"
+    document.getElementById("medio").style.cursor = "default"
+    document.getElementById("facil").style.backgroundColor = "gray"
+    document.getElementById("facil").style.color = "black"
+    document.getElementById("facil").style.cursor = "default"
+    document.getElementById("noob").style.backgroundColor = "gray"
+    document.getElementById("noob").style.color = "black"
+    document.getElementById("noob").style.cursor = "default"
     jogar()
 }
 
