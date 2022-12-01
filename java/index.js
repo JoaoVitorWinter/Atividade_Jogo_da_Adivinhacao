@@ -40,7 +40,16 @@ function verificarChute () {
     numChutes++
     if(chute == numRandom){
         pontos = 1000 / (modo + numChutes)
-        alert("Parabéns, " + nome + ", você acertou! Pontuação: " + pontos)
+        alert("Parabéns, " + nome + ", você acertou! Pontuação: " + pontos.toFixed(2))
+
+        fetch("/rankear", {
+            method: "POST",
+            body: JSON.stringify({nome, pontos}),
+            headers: { "Content-Type": "application/json" }
+        })
+        .then(res => {
+        })
+
         window.location.href = "/"
     } else if (chute > numRandom){
         document.getElementById("aviso").innerText = "O chute foi maior que o número!"
@@ -48,7 +57,7 @@ function verificarChute () {
         document.getElementById("aviso").innerText = "O chute foi menor que o número!"
     }
 
-    if(numChutes == modo){
+    if(numChutes == modo && chute != numRandom){
         alert("Você perdeu! O número era " + numRandom)
         window.location.href = "/"
     }

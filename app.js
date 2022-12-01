@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html")
 })
 
+app.post("/rankear", (req, res) => {
+    sql.query("insert into placar values (?,?,?)", [null, req.body.nome, req.body.pontos])
+})
+
 app.listen(port, () => {
     console.log("Servidor tá ON - http://localhost:8081/")
 })
